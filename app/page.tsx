@@ -1,7 +1,12 @@
 
+import type { Metadata } from "next";
 import { products } from "./data/products";
 import ProductCard from "./components/ProductCard";
-import "./globals.css";
+
+export const metadata: Metadata = {
+  title: "ShipYard | Product Catalog",
+  description: "Explore our products and find what you need.",
+};
 
 export default function Home() {
   return (
