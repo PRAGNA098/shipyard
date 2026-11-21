@@ -2,6 +2,7 @@
 import { getProduct, products } from "../../data/products";
 import { notFound } from "next/navigation";
 import Link from "next/link";
+import Image from "next/image";
 import ReviewsLoader from "../../components/ReviewsLoader";
 
 type ProductPageProps = {
@@ -43,10 +44,26 @@ export default async function ProductPage({ params }: ProductPageProps) {
   return (
     <main className="container">
       <h1>{product.name}</h1>
+
+      <Image
+        src={product.image}
+        alt={product.name}
+        width={600}
+        height={400}
+        style={{
+          width: "100%",
+          maxWidth: "600px",
+          height: "auto",
+          objectFit: "contain",
+        }}
+      />
+
       <p>{product.description}</p>
       <p>Category: {product.category}</p>
       <h2>Price: ₹{product.price}</h2>
+
       <ReviewsLoader />
+
       <Link href="/">← Back to Home</Link>
     </main>
   );
