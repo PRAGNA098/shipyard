@@ -34,3 +34,42 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+
+## ShipYard
+
+ShipYard is a product catalog website built using Next.js, React, and TypeScript. Users can browse products and view individual product details.
+
+### Live Website
+https://pragna098.github.io/shipyard/
+
+### Lighthouse Performance
+- Mobile Performance Score: **97**
+
+### Features
+- Product catalog
+- Individual product pages
+- Loading state
+- Error handling with retry option
+- Custom not-found page
+- Optimized images
+- Static site deployment using GitHub Pages
+
+### Run Locally
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/PRAGNA098/shipyard.git
+   ```
+2. Open the project folder:
+   ```bash
+   cd shipyard
+   ```
+3. Install dependencies:
+   ```bash
+   npm install
+   ```
+4. Start the development server:
+   ```bash
+   npm run dev
+   ```
+5. Open http://localhost:3000 in your browser.
