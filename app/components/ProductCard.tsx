@@ -16,6 +16,7 @@ export default function ProductCard({ product }: ProductCardProps) {
         width={400}
         height={250}
         className="product-image"
+        priority
       />
 
       <h2>{product.name}</h2>
